@@ -3,9 +3,10 @@ package com.example.currencyconverter.items;
 public class Currency {
     private long ID;
     private long NumCode;
+    private String CharCode;
     private int Nominal;
     private String Name;
-    private double Value;
+    private float Value;
 
 
     public long getID() {
@@ -24,6 +25,14 @@ public class Currency {
         NumCode = numCode;
     }
 
+    public String getCharCode() {
+        return CharCode;
+    }
+
+    public void setCharCode(String charCode) {
+        CharCode = charCode;
+    }
+
     public int getNominal() {
         return Nominal;
     }
@@ -40,11 +49,11 @@ public class Currency {
         Name = name;
     }
 
-    public double getValue() {
+    public float getValue() {
         return Value;
     }
 
-    public void setValue(double value) {
+    public void setValue(float value) {
         Value = value;
     }
 }
